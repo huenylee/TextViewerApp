@@ -1,0 +1,19 @@
+import DependencyPlugin
+import ProjectDescription
+import ProjectDescriptionHelpers
+
+let project = Project.module(
+    name: ModulePaths.FeatureInterface.DesignSystem.rawValue,
+    targets: [
+        .implements(
+          module: .featureInferface(.DesignSystem),
+          product: .framework
+        ),
+        .example(
+          module: .featureInferface(.DesignSystem),
+          dependencies: [
+            .featureInterface(target: .DesignSystem)
+          ]
+        )
+    ]
+)
