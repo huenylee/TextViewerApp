@@ -32,26 +32,26 @@ public extension ModulePaths {
 
 public extension ModulePaths {
   enum Feature: String, MicroTargetPathConvertable {
-    case BaseFeature
+    case Feature
   }
 }
 
 public extension ModulePaths {
   enum Domain: String, MicroTargetPathConvertable {
-    case BaseDomain
+    case Domain
   }
 }
 
 public extension ModulePaths {
   enum Data: String, MicroTargetPathConvertable {
-    case BaseData
+    case Data
   }
 }
 
 public extension ModulePaths {
   enum Shared: String, MicroTargetPathConvertable {
     case GlobalThirdPartyLibrary
-    case BaseShared
+    case Shared
   }
 }
 

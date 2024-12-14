@@ -1,7 +1,7 @@
 import Foundation
 import ProjectDescription
 
-public struct ProjectEnvironment {
+public struct ProjectEnvironment : Sendable {
   public let name: String
   public let organizationName: String
   public let destinations: Destinations
@@ -10,10 +10,10 @@ public struct ProjectEnvironment {
 }
 
 public let env = ProjectEnvironment(
-  name: "TextViewerApp",
+  name: "MyTextViewer",
   organizationName: "com.hunhee",
-  destinations: [.iPhone, .iPad],
-  deploymentTargets: .iOS("16.0"),
+  destinations: [.iPhone],
+  deploymentTargets: .iOS("17.0"),
   baseSetting: [:]
 )
 

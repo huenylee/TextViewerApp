@@ -34,8 +34,8 @@ let targets: [Target] = [
     resources: ["Resources/**"],
     scripts: scripts,
     dependencies: [
-      .feature(target: .BaseFeature),
-      .data(target: .BaseData)
+      .feature(target: .Feature),
+      .data(target: .Data)
     ],
     settings: .settings(base: env.baseSetting)
   )
@@ -74,6 +74,11 @@ let schemes: [Scheme] = [
 let project = Project(
   name: env.name,
   organizationName: env.organizationName,
+  options: .options(
+    // localization 설정
+    defaultKnownRegions: ["en", "ko", "jp", "Base"],
+    developmentRegion: "ko"
+    ),
   settings: settings,
   targets: targets
 )

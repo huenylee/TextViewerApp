@@ -8,16 +8,16 @@
 import DependencyPlugin
 import ProjectDescription
 import ProjectDescriptionHelpers
-
-let project = Project.module(
-  name: ModulePaths.Preview.Preview.rawValue,
-  targets: [
-    .implements(
-      module: .preview(.Preview),
-      product: .framework,
-      dependencies: [
-        .feature(target: .BaseFeature)
-      ]
-    )
-  ]
-)
+//
+//let project = Project.module(
+//  name: ModulePaths.Preview.Preview.rawValue,
+//  targets: [
+//    .implements(
+//      module: .preview(.Preview),
+//      product: .framework,
+//      dependencies: [
+//        .feature(target: .Feature)
+//      ]
+//    )
+//  ]
+//)

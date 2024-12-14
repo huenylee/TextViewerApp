@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  MyTextViewer
+
+  Created by HUNHEE LEE on 14.11.2024.
+  Copyright © 2024 com.hunhee. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "나의 텍스트 뷰어";

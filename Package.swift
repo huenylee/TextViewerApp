@@ -1,5 +1,5 @@
 // swift-tools-version: 5.9
-import PackageDescription
+@preconcurrency import PackageDescription
 
 #if TUIST
 import ProjectDescription
@@ -17,6 +17,14 @@ let packageSetting = PackageSettings(
 #endif
 
 let package = Package(
-  name: "Package",
-  dependencies: []
+  name: "MyTextViewer",
+  platforms: [
+    .iOS(.v17)
+  ],
+  dependencies: [
+    .package(
+      url: "https://github.com/pointfreeco/swift-composable-architecture.git",
+      .upToNextMinor(from: "1.13.0")
+    )
+  ]
 )
